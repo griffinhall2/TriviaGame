@@ -1,0 +1,85 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    
+</head>
+<body>
+
+
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-12">
+                <h1>Baseball Trivia Game</h1>
+            </div>
+        </div>
+        <!--Add Start Button-->
+        <div class = "row">
+            <div class = "col-sm-12">
+                <button type="button" class="btn btn-primary">Start</button>
+            </div>
+        </div>
+        <!--Add a Timer-->
+        <div class = "timer">
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <h2>Time Remaining:</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--Add questions and answers-->
+        <div class = "quiz">
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <form>
+                        <p>1. What team plays at historic Wrigley Field?</p>
+                            <input class="question1" type="radio" name="question1" value="incorrect"> Cardinals
+                            <input class="question1" type="radio" name="question1" value="inorrect"> Red Sox
+                            <input class="question1" type="radio" name="question1" value="correct"> Cubs
+                            <input class="question1" type="radio" name="question1" value="incorrect"> Royals
+                        <br><br>
+                        <p>2. How many Major League Baseball teams are located in Canada?</p>
+                            <input class="question2" type="radio" name="question2" value="incorrect"> 0
+                            <input class="question2" type="radio" name="question2" value="correct"> 1
+                            <input class="question2" type="radio" name="question2" value="incorrect"> 2
+                            <input class="question2" type="radio" name="question2" value="incorrect"> 3
+                        <br><br>
+                        <p>3. What is the championship at the end of the MLB season called?</p>
+                            <input class="question3" type="radio" name="question3" value="incorrect"> Rec League Chamiponship
+                            <input class="question3" type="radio" name="question3" value="incorrect"> World Cup
+                            <input class="question3" type="radio" name="question3" value="incorrect"> Super Bowl
+                            <input class="question3" type="radio" name="question3" value="correct"> World Series
+                        <br><br>
+                        <p>4. Who holds the record for most home runs in a season?</p>
+                            <input class="question4" type="radio" name="question4" value="incorrect"> Lou Gehrig
+                            <input class="question4" type="radio" name="question4" value="incorrect"> Babe Ruth
+                            <input class="question4" type="radio" name="question4" value="correct"> Barry Bonds
+                            <input class="question4" type="radio" name="question4" value="incorrect"> Mark McGwire
+                        <br><br>
+                        <p>5. What is the mascot for Cincinnati?</p>
+                            <input class="question5" type="radio" name="question5" value="incorrect"> Bengals
+                            <input class="question5" type="radio" name="question5" value="correct"> Reds
+                            <input class="question5" type="radio" name="question5" value="incorrect"> Tigers
+                            <input class="question5" type="radio" name="question5" value="incorrect"> Crawdads
+                        <br><br>
+                        <input type="submit" id="submission">
+                    </form>
+                    <!--add submit button for quiz-->
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
