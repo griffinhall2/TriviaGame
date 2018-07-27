@@ -7,22 +7,32 @@ body {
 }
 form {
     text-align: center;
-    background: orange;
+    color: white;
     margin: auto;
     width: 600px;
     padding:20px;
+    background: url("../images/dirt.jpeg");
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 p {
-    color: green;
+    color: white;
+    font-size: larger;
 }
 .startquiz {
     text-align: center;
+    background: url("../images/grass.jpg");
+    color: white;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+
 }
 
 .question1 {
     margin: 10px;
+    color: white;
 }
 
 .question2 {
@@ -54,4 +64,8 @@ p {
 }
 .question10 {
     margin: 10px;
+}
+
+#submission {
+    color:green;
 }

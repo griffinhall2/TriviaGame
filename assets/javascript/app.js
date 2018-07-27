@@ -13,6 +13,12 @@ $("document").ready(function() {
         console.log(answer3);
         console.log(answer4);
         console.log(answer5);
+        console.log(answer6);
+        console.log(answer7);
+        console.log(answer8);
+        console.log(answer9);
+        console.log(answer10);
+
         
     });
 });
