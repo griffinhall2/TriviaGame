@@ -4,7 +4,7 @@ $("document").ready(function() {
     var number = 60;
     var intervalId;
 
-    
+    // Add on click function
     $("#start").on("click", start);
     
     function start() {
@@ -12,14 +12,25 @@ $("document").ready(function() {
         intervalId = setInterval(decrement, 1000);
       }
   
-      //  The decrement function.
+    //  Add decrement function
     function decrement() {
   
-        //  Decrease number by one.
+        // Decrease number by one
         number--;
-    
+        // Add the time remaining to HTML
         $("#timer").html("<h2>" + number + "</h2>");
+      
+        // Run the stop function if the number hits zero
+        if (number === 0) {
+
+        stop();
+
+        function stop() {
+
+            clearInterval(intervalId);
+        }
     }
+}
     
         $("#submission").on("click", function(){
         event.preventDefault();
@@ -33,7 +44,7 @@ $("document").ready(function() {
         var answer8 = $("input[name=question8]:checked").val();
         var answer9 = $("input[name=question9]:checked").val();
         var answer10 = $("input[name=question10]:checked").val();
-
+        
         console.log(answer1);
         console.log(answer2);
         console.log(answer3);
@@ -45,6 +56,114 @@ $("document").ready(function() {
         console.log(answer9);
         console.log(answer10);
 
+        var numberCorrect = 0;
+        var numberIncorrect = 0;
+        var numberUnanswered = 0;
+        
+        //Add Score to HTML
+        if (answer1 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer1 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer2 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer2 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer3 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer3 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer4 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer4 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer5 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer5 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer6 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer6 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer7 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer7 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer8 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer8 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer9 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer9 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+        
+        if (answer10 === "correct") {
+            numberCorrect++;
+        }
+        else if (answer10 === "incorrect") {
+            numberIncorrect++;
+        }
+        else {
+            numberUnanswered++;
+        }
+
+        $("#correctAnswer").html("Correct: " + numberCorrect);
+        $("#incorrectAnswer").html("Incorrect: " + numberIncorrect);
+        $("#unanswered").html("Unanswered: " + numberUnanswered);
         
     });
 });
