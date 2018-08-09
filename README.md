@@ -8,6 +8,8 @@ Instructions:
 3. Once you have answered all the questions click submit.
 4. Your score will then show up below the submit button!
 
+https://griffinhall2.github.io/TriviaGame/
+
 <img width="1260" alt="screen shot 2018-08-09 at 5 18 00 pm" src="https://user-images.githubusercontent.com/40393934/43926434-47082922-9bf8-11e8-9cf3-44a39c7e4de0.png">
 
 
